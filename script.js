@@ -133,6 +133,7 @@ function renderTourCard(tour){
   const dots = (tour.images || []).map((_, idx) => `<span class="dot ${idx===0?'active':''}" data-index="${idx}"></span>`).join('');
   const btnText = lang === 'en' ? 'Contact us' : 'Contáctanos';
   const ariaBtn = lang === 'en' ? 'Contact via WhatsApp' : 'Contactar por WhatsApp';
+  const infoText = lang === 'en' ? 'See info' : 'Ver info';
   return `
   <article class="card" tabindex="0" aria-label="${title}">
     <div class="card-media" style="--bg:url('${first}')">
@@ -143,8 +144,10 @@ function renderTourCard(tour){
     </div>
     <div class="overlay">
       <h3 class="card-title">${title}</h3>
-      <p class="card-desc">${desc}</p>
-      <a class="btn-whats" data-tour="${title}" href="#" target="_blank" rel="noopener" aria-label="${ariaBtn}">${btnText}</a>
+      <div class="overlay-actions" style="display:flex; gap:8px; flex-wrap:wrap">
+        <button class="btn-ghost btn-info" data-slug="${tour.slug}" aria-label="${infoText} - ${title}">${infoText}</button>
+        <a class="btn-whats" data-tour="${title}" href="#" target="_blank" rel="noopener" aria-label="${ariaBtn}">${btnText}</a>
+      </div>
     </div>
   </article>`;
 }
@@ -179,11 +182,17 @@ function hydrateCarousels(root){
       // reiniciar luego de una pequeña pausa
       setTimeout(startAuto, 1200);
     }));
-    let startY=0; let moved=false;
-    card.addEventListener('touchstart', (e)=>{ startY = e.touches[0].clientY; moved=false; stopAuto(); }, {passive:true});
+    let startY=0; let moved=false; let swipeEnabled=false;
+    card.addEventListener('touchstart', (e)=>{ 
+      // solo habilitar swipe si el gesto inicia sobre la zona de imagen/carrusel
+      swipeEnabled = !!e.target.closest('.card-media');
+      startY = e.touches[0].clientY; moved=false; 
+      stopAuto(); 
+    }, {passive:true});
     card.addEventListener('touchmove', ()=>{ moved=true; }, {passive:true});
     card.addEventListener('touchend', (e)=>{
       if(!moved) return;
+      if(!swipeEnabled) return; // permitir scroll del texto sin disparar swipe
       const dy = e.changedTouches[0].clientY - startY;
       if(Math.abs(dy) < 30) return;
       const dir = dy<0 ? 1 : -1; // swipe up -> siguiente
@@ -206,12 +215,13 @@ function hydrateCarousels(root){
 function renderToursGrid(){
   const grid = document.getElementById('toursGrid');
   if(!grid || !Array.isArray(toursCache)) return;
-  const shown = 10; // mantener 10 visibles
+  const shown = 12; // mostrar hasta 12 visibles
   const slice = toursCache.slice(0, shown);
   grid.innerHTML = slice.map(renderTourCard).join('');
   hydrateCarousels(grid);
   updateWhatsLinks();
 }
+
 
 async function initTours(){
   const grid = document.getElementById('toursGrid');
@@ -222,8 +232,54 @@ async function initTours(){
 
   // Botón de referencia: no hace nada por ahora
   btnMore.addEventListener('click', (e)=>{
-    e.preventDefault();
+  e.preventDefault();
   });
+}
+
+// Modal simple para ver la descripción del tour
+function initInfoModal(){
+  const modal = document.getElementById('infoModal');
+  const modalTitle = document.getElementById('infoModalTitle');
+  const modalBody = document.getElementById('infoModalBody');
+  const closeBtn = document.getElementById('infoModalClose');
+  if(!modal || !modalTitle || !modalBody || !closeBtn) return;
+
+  const close = ()=>{
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+  modal.style.display = 'none';
+    document.body.style.overflow='';
+  };
+  const open = (slug)=>{
+    if(!Array.isArray(toursCache)) return;
+    const lang = getLang();
+    const tour = toursCache.find(t=>t.slug===slug);
+    if(!tour) return;
+    modalTitle.textContent = tour.title?.[lang] || tour.name || 'Tour';
+    modalBody.textContent = tour.desc?.[lang] || '';
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+  modal.style.display = 'flex';
+    document.body.style.overflow='hidden';
+  };
+
+  // Delegación para botones .btn-info
+  document.addEventListener('click', (e)=>{
+    const btn = e.target.closest('.btn-info');
+    if(btn){
+      e.preventDefault();
+      const slug = btn.getAttribute('data-slug');
+      open(slug);
+    }
+    // Cerrar si clic en backdrop
+    if(e.target.classList && e.target.classList.contains('modal-backdrop')){
+      close();
+    }
+  });
+  // Cerrar con botón X
+  closeBtn.addEventListener('click', (e)=>{ e.preventDefault(); close(); });
+  // Cerrar con ESC
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && modal.classList.contains('open')) close(); });
 }
 
 // Init
@@ -235,4 +291,5 @@ window.addEventListener('DOMContentLoaded', async () => {
   initCardsInteractions();
   initYear();
   initTours();
+  initInfoModal();
 });

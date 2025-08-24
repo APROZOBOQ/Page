@@ -136,5 +136,40 @@
       "img/toures/Tour 5 islas/3.webp",
       "img/toures/Tour 5 islas/4.webp"
     ]
+  },
+  {
+    "slug": "tour-por-palenque",
+    "name": "Tour por Palenque",
+    "title": {
+      "es": "Tour por Palenque",
+      "en": "San Basilio de Palenque Tour"
+    },
+    "desc": {
+      "es": "Visita cultural al primer pueblo libre de América: música, lengua palenquera e historia viva.",
+      "en": "Cultural visit to the first free town in the Americas: music, Palenquero language, and living history."
+    },
+    "images": [
+      "img/toures/Palenque/1.webp",
+      "img/toures/Palenque/2.webp",
+      "img/toures/Palenque/3.webp",
+      "img/toures/Palenque/4.webp"
+    ]
+  },
+  {
+    "slug": "volcan-del-totumo",
+    "name": "Volcán del Totumo",
+    "title": {
+      "es": "Volcán del Totumo",
+      "en": "Totumo Mud Volcano"
+    },
+    "desc": {
+      "es": "Baño de lodo volcánico y relax en aguas minerales, una experiencia única cerca de Cartagena.",
+      "en": "Mud bath in a natural volcano and mineral rinse — a unique experience near Cartagena."
+    },
+    "images": [
+      "img/toures/Volcan de totumo/1.webp",
+      "img/toures/Volcan de totumo/2.webp",
+      "img/toures/Volcan de totumo/3.webp"
+    ]
   }
 ]

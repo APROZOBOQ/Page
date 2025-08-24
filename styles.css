@@ -84,11 +84,23 @@ img{max-width:100%;display:block}
 .card.active .card-media{ filter:brightness(.55) saturate(.9) blur(2.5px) }
 
 /* Overlay de contenido más contrastado */
-.overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:16px;background:linear-gradient(180deg,rgba(0,0,0,0) 38%, rgba(0,0,0,.82) 100%); color:#fff; opacity:0; transform:translateY(6px); transition:.25s ease}
+.overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:16px;background:linear-gradient(180deg,rgba(0,0,0,0) 38%, rgba(0,0,0,.82) 100%); color:#fff; opacity:0; transform:translateY(6px); transition:.25s ease; overflow:hidden}
 .card:hover .overlay, .card:focus-within .overlay, .card.active .overlay{ backdrop-filter: blur(1.5px) }
 .card:hover .overlay, .card:focus-within .overlay, .card.active .overlay{opacity:1; transform:none}
 .card-title{margin:0;font-size:18px;text-shadow:0 2px 8px rgba(0,0,0,.55)}
-.card-desc{margin:0 0 6px;font-size:14px;opacity:.98;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.card-desc{margin:0 0 6px;font-size:14px;opacity:.98;text-shadow:0 1px 6px rgba(0,0,0,.5); max-height:9em; overflow:auto; -webkit-overflow-scrolling:touch; padding-right:4px}
+
+/* Scrollbar sutil para la descripción */
+.card-desc::-webkit-scrollbar{width:8px}
+.card-desc::-webkit-scrollbar-thumb{background:rgba(255,255,255,.35);border-radius:8px}
+.card-desc::-webkit-scrollbar-track{background:transparent}
+@supports (scrollbar-color: auto){
+  .card-desc{scrollbar-width:thin; scrollbar-color: rgba(255,255,255,.35) transparent}
+}
+
+@media (max-width:600px){
+  .card-desc{max-height:11em}
+}
 .btn-whats{align-self:flex-start; background:#25D366;color:#003270;font-weight:800;text-decoration:none;border-radius:999px;padding:10px 14px;box-shadow:var(--shadow)}
 .btn-whats:hover{filter:brightness(1.05)}
 
@@ -134,3 +146,13 @@ img{max-width:100%;display:block}
 .card-carousel .dots{position:absolute;left:8px;bottom:8px;display:flex;gap:6px}
 .card-carousel .dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6)}
 .card-carousel .dot.active{background:#fff}
+
+/* Modal genérico */
+.modal-backdrop{position:fixed; inset:0; background:rgba(0,0,0,.5); display:flex; align-items:center; justify-content:center; z-index:50; opacity:0; pointer-events:none; transition:opacity .2s ease}
+.modal-backdrop.open{opacity:1; pointer-events:auto}
+.modal-dialog{width:min(720px,92vw); max-height:78vh; background:#fff; color:var(--c-text); border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.25); padding:18px 18px 16px; transform:translateY(10px); transition:transform .2s ease}
+.modal-backdrop.open .modal-dialog{transform:none}
+.modal-title{margin:0 28px 8px 0; color:var(--c-navy); font-size:clamp(18px,3.6vw,22px)}
+.modal-body{overflow:auto; max-height:58vh; color:var(--c-muted)}
+.modal-close{position:absolute; right:12px; top:8px; border:none; background:transparent; font-size:24px; line-height:1; cursor:pointer; color:#64748b}
+.modal-close:hover{color:#0f172a}
