@@ -1,0 +1,140 @@
+[
+  {
+    "slug": "atardecer-sibarita-master",
+    "name": "Atardecer Sibarita Master",
+    "title": {
+      "es": "Atardecer Sibarita Master",
+      "en": "Sibarita Master Sunset"
+    },
+    "desc": {
+      "es": "Paseo al atardecer con vistas de la bahía y ambiente exclusivo.",
+      "en": "Sunset cruise with bay views and an exclusive vibe."
+    },
+    "images": [
+      "img/toures/Atardecer sibarita master/1.webp",
+      "img/toures/Atardecer sibarita master/2.webp"
+    ]
+  },
+  {
+    "slug": "chiva-rumbera",
+    "name": "Chiva rumbera",
+    "title": {
+      "es": "Chiva rumbera",
+      "en": "Party Bus"
+    },
+    "desc": {
+      "es": "Recorrido nocturno con música, baile y paradas icónicas.",
+      "en": "Night ride with music, dancing and iconic stops."
+    },
+    "images": [
+      "img/toures/chiva rumbera/1.webp",
+      "img/toures/chiva rumbera/2.webp",
+      "img/toures/chiva rumbera/3.webp"
+    ]
+  },
+  {
+    "slug": "city-tour",
+    "name": "City tour",
+    "title": {
+      "es": "City tour",
+      "en": "City Tour"
+    },
+    "desc": {
+      "es": "Historia y arquitectura en los lugares más representativos.",
+      "en": "History and architecture through the city highlights."
+    },
+    "images": [
+      "img/toures/City tour/1.webp",
+      "img/toures/City tour/2.webp",
+      "img/toures/City tour/3.webp"
+    ]
+  },
+  {
+    "slug": "eteka-beach-resort",
+    "name": "Eteka beach resort",
+    "title": {
+      "es": "Eteka beach resort",
+      "en": "Eteka Beach Resort"
+    },
+    "desc": {
+      "es": "Día de playa con servicios y ambientes para relajarte.",
+      "en": "Beach day with services and relaxing spaces."
+    },
+    "images": [
+      "img/toures/Eteka beach resort/1.webp",
+      "img/toures/Eteka beach resort/2.webp",
+      "img/toures/Eteka beach resort/3.webp",
+      "img/toures/Eteka beach resort/4.webp"
+    ]
+  },
+  {
+    "slug": "pao-pao",
+    "name": "Pao Pao",
+    "title": {
+      "es": "Pao Pao",
+      "en": "Pao Pao"
+    },
+    "desc": {
+      "es": "Beach club con buena música, gastronomía y mar turquesa.",
+      "en": "Beach club with music, food and turquoise sea."
+    },
+    "images": [
+      "img/toures/Pao Pao/1.webp",
+      "img/toures/Pao Pao/2.webp",
+      "img/toures/Pao Pao/3.webp",
+      "img/toures/Pao Pao/4.webp",
+      "img/toures/Pao Pao/5.webp"
+    ]
+  },
+  {
+    "slug": "playa-blanca",
+    "name": "Playa blanca",
+    "title": {
+      "es": "Playa blanca",
+      "en": "Playa Blanca"
+    },
+    "desc": {
+      "es": "Arena blanca y aguas claras para un día de descanso.",
+      "en": "White sand and clear waters for a relaxing day."
+    },
+    "images": [
+      "img/toures/Playa blanca/1.webp",
+      "img/toures/Playa blanca/2.webp",
+      "img/toures/Playa blanca/3.webp"
+    ]
+  },
+  {
+    "slug": "playa-tranquila",
+    "name": "Playa tranquila",
+    "title": {
+      "es": "Playa tranquila",
+      "en": "Playa Tranquila"
+    },
+    "desc": {
+      "es": "Ambiente sereno y mar apacible para desconectarte.",
+      "en": "Calm setting and gentle sea to unplug."
+    },
+    "images": [
+      "img/toures/playa tranquila/1.webp",
+      "img/toures/playa tranquila/2.webp"
+    ]
+  },
+  {
+    "slug": "tour-5-islas",
+    "name": "Tour 5 islas",
+    "title": {
+      "es": "Tour 5 islas",
+      "en": "5 Islands Tour"
+    },
+    "desc": {
+      "es": "Recorre varias islas con snorkel y paisajes espectaculares.",
+      "en": "Island hopping with snorkeling and great views."
+    },
+    "images": [
+      "img/toures/Tour 5 islas/1.webp",
+      "img/toures/Tour 5 islas/2.webp",
+      "img/toures/Tour 5 islas/3.webp",
+      "img/toures/Tour 5 islas/4.webp"
+    ]
+  }
+]
