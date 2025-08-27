@@ -1,0 +1,12 @@
+# robots.txt generado para APROZOBOQ
+# Permite el rastreo de todo el sitio. Actualiza la línea de Sitemap con tu URL final.
+
+User-agent: *
+Allow: /
+
+# IMPORTANTE: Reemplaza la URL de abajo por tu dominio o URL de GitHub Pages al publicar
+# Ejemplos:
+#   https://tuusuario.github.io/ (si tu repo se llama tuusuario.github.io)
+#   https://tuusuario.github.io/tu-repo/ (si es un sitio de proyecto)
+#   https://tudominio.com/
+Sitemap: https://TU-URL-PUBLICA/sitemap.xml

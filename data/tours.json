@@ -10,6 +10,7 @@
       "es": "Paseo al atardecer con vistas de la bahía y ambiente exclusivo.",
       "en": "Sunset cruise with bay views and an exclusive vibe."
     },
+  "price": { "es": "115.000/140.000(vip)", "en": "115.000/140.000(vip)" },
     "images": [
       "img/toures/Atardecer sibarita master/1.webp",
       "img/toures/Atardecer sibarita master/2.webp"
@@ -26,6 +27,7 @@
       "es": "Recorrido nocturno con música, baile y paradas icónicas.",
       "en": "Night ride with music, dancing and iconic stops."
     },
+  "price": { "es": "50.000", "en": "50.000" },
     "images": [
       "img/toures/chiva rumbera/1.webp",
       "img/toures/chiva rumbera/2.webp",
@@ -43,6 +45,7 @@
       "es": "Historia y arquitectura en los lugares más representativos.",
       "en": "History and architecture through the city highlights."
     },
+  "price": { "es": "100.000", "en": "100.000" },
     "images": [
       "img/toures/City tour/1.webp",
       "img/toures/City tour/2.webp",
@@ -60,6 +63,7 @@
       "es": "Día de playa con servicios y ambientes para relajarte.",
       "en": "Beach day with services and relaxing spaces."
     },
+  "price": { "es": "350.000", "en": "350.000" },
     "images": [
       "img/toures/Eteka beach resort/1.webp",
       "img/toures/Eteka beach resort/2.webp",
@@ -78,6 +82,7 @@
       "es": "Beach club con buena música, gastronomía y mar turquesa.",
       "en": "Beach club with music, food and turquoise sea."
     },
+  "price": { "es": "390.000", "en": "390.000" },
     "images": [
       "img/toures/Pao Pao/1.webp",
       "img/toures/Pao Pao/2.webp",
@@ -97,6 +102,7 @@
       "es": "Arena blanca y aguas claras para un día de descanso.",
       "en": "White sand and clear waters for a relaxing day."
     },
+  "price": { "es": "80.000", "en": "80.000" },
     "images": [
       "img/toures/Playa blanca/1.webp",
       "img/toures/Playa blanca/2.webp",
@@ -114,6 +120,7 @@
       "es": "Ambiente sereno y mar apacible para desconectarte.",
       "en": "Calm setting and gentle sea to unplug."
     },
+  "price": { "es": "120.000", "en": "120.000" },
     "images": [
       "img/toures/playa tranquila/1.webp",
       "img/toures/playa tranquila/2.webp"
@@ -130,6 +137,7 @@
       "es": "Recorre varias islas con snorkel y paisajes espectaculares.",
       "en": "Island hopping with snorkeling and great views."
     },
+  "price": { "es": "350.000", "en": "350.000" },
     "images": [
       "img/toures/Tour 5 islas/1.webp",
       "img/toures/Tour 5 islas/2.webp",
@@ -148,6 +156,7 @@
       "es": "Visita cultural al primer pueblo libre de América: música, lengua palenquera e historia viva.",
       "en": "Cultural visit to the first free town in the Americas: music, Palenquero language, and living history."
     },
+  "price": { "es": "280.000", "en": "280.000" },
     "images": [
       "img/toures/Palenque/1.webp",
       "img/toures/Palenque/2.webp",
@@ -166,10 +175,236 @@
       "es": "Baño de lodo volcánico y relax en aguas minerales, una experiencia única cerca de Cartagena.",
       "en": "Mud bath in a natural volcano and mineral rinse — a unique experience near Cartagena."
     },
+  "price": { "es": "150.000", "en": "150.000" },
     "images": [
       "img/toures/Volcan de totumo/1.webp",
       "img/toures/Volcan de totumo/2.webp",
       "img/toures/Volcan de totumo/3.webp"
+    ]
+  },
+  {
+    "slug": "baranquilla-santa-marta",
+    "name": "Baranquilla santa marta",
+    "title": { "es": "Baranquilla y Santa Marta", "en": "Baranquilla & Santa Marta" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "260.000", "en": "260.000" },
+    "images": [
+      "img/toures/Baranquilla santa marta/1.webp",
+      "img/toures/Baranquilla santa marta/2.webp",
+      "img/toures/Baranquilla santa marta/3.webp",
+      "img/toures/Baranquilla santa marta/4.webp",
+      "img/toures/Baranquilla santa marta/5.webp"
+    ]
+  },
+  {
+    "slug": "barco-pirata",
+    "name": "Barco pirata",
+    "title": { "es": "Barco pirata", "en": "Pirate Ship" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "130.000", "en": "130.000" },
+    "images": [
+      "img/toures/Barco pirata/1.webp",
+      "img/toures/Barco pirata/2.webp",
+      "img/toures/Barco pirata/3.webp"
+    ]
+  },
+  {
+    "slug": "bora-bora",
+    "name": "bora bora",
+    "title": { "es": "Bora Bora", "en": "Bora Bora" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "370.000", "en": "370.000" },
+    "images": [
+      "img/toures/bora bora/1.webp",
+      "img/toures/bora bora/2.webp",
+      "img/toures/bora bora/3.webp",
+      "img/toures/bora bora/4.webp",
+      "img/toures/bora bora/5.webp"
+    ]
+  },
+  {
+    "slug": "cena-sibarita",
+    "name": "Cena sibarita",
+    "title": { "es": "Cena Sibarita", "en": "Sibarita Dinner" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "275.000", "en": "275.000" },
+    "images": [
+      "img/toures/Cena sibarita/1.webp",
+      "img/toures/Cena sibarita/2.webp",
+      "img/toures/Cena sibarita/3.webp",
+      "img/toures/Cena sibarita/4.webp"
+    ]
+  },
+  {
+    "slug": "cholon",
+    "name": "Cholon",
+    "title": { "es": "Cholón", "en": "Cholon" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "350.000", "en": "350.000" },
+    "images": [
+      "img/toures/Cholon/1.webp",
+      "img/toures/Cholon/2.webp",
+      "img/toures/Cholon/3.webp",
+      "img/toures/Cholon/4.webp"
+    ]
+  },
+  {
+    "slug": "isla-cocotera",
+    "name": "Isla cocotera",
+    "title": { "es": "Isla Cocotera", "en": "Cocotera Island" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "280.000", "en": "280.000" },
+    "images": [
+      "img/toures/Isla cocotera/1.webp",
+      "img/toures/Isla cocotera/2.webp",
+      "img/toures/Isla cocotera/3.webp",
+      "img/toures/Isla cocotera/4.webp"
+    ]
+  },
+  {
+    "slug": "isla-de-ibbiza",
+    "name": "isla de Ibbiza",
+    "title": { "es": "Isla de Ibbiza", "en": "Ibbiza Island" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "380.000", "en": "380.000" },
+    "images": [
+      "img/toures/isla de Ibbiza/1.webp",
+      "img/toures/isla de Ibbiza/2.webp",
+      "img/toures/isla de Ibbiza/3.webp"
+    ]
+  },
+  {
+    "slug": "isla-del-encanto",
+    "name": "isla del encanto",
+    "title": { "es": "Isla del Encanto", "en": "Isla del Encanto" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "410.000", "en": "410.000" },
+    "images": [
+      "img/toures/isla del encanto/1.webp",
+      "img/toures/isla del encanto/2.webp",
+      "img/toures/isla del encanto/3.webp",
+      "img/toures/isla del encanto/4.webp",
+      "img/toures/isla del encanto/5.webp"
+    ]
+  },
+  {
+    "slug": "isla-del-pirata",
+    "name": "isla del pirata",
+    "title": { "es": "Isla del Pirata", "en": "Pirate Island" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "305.000", "en": "305.000" },
+    "images": [
+      "img/toures/isla del pirata/1.webp",
+      "img/toures/isla del pirata/2.webp",
+      "img/toures/isla del pirata/3.webp",
+      "img/toures/isla del pirata/4.webp",
+      "img/toures/isla del pirata/5.webp"
+    ]
+  },
+  {
+    "slug": "isla-del-sol",
+    "name": "isla del sol",
+    "title": { "es": "Isla del Sol", "en": "Isla del Sol" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "370.000", "en": "370.000" },
+    "images": [
+      "img/toures/isla del sol/1.webp",
+      "img/toures/isla del sol/2.webp",
+      "img/toures/isla del sol/3.webp",
+      "img/toures/isla del sol/4.webp",
+      "img/toures/isla del sol/5.webp",
+      "img/toures/isla del sol/6.webp"
+    ]
+  },
+  {
+    "slug": "isla-encantada",
+    "name": "isla encantada",
+    "title": { "es": "Isla Encantada", "en": "Isla Encantada" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "230.000", "en": "230.000" },
+    "images": [
+      "img/toures/isla encantada/1.webp",
+      "img/toures/isla encantada/2.webp",
+      "img/toures/isla encantada/3.webp",
+      "img/toures/isla encantada/4.webp"
+    ]
+  },
+  {
+    "slug": "isla-lizamar",
+    "name": "isla lizamar",
+    "title": { "es": "Isla Lizamar", "en": "Isla Lizamar" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "350.000", "en": "350.000" },
+    "images": [
+      "img/toures/isla lizamar/1.webp",
+      "img/toures/isla lizamar/2.webp",
+      "img/toures/isla lizamar/3.webp",
+      "img/toures/isla lizamar/4.webp",
+      "img/toures/isla lizamar/5.webp",
+      "img/toures/isla lizamar/6.webp"
+    ]
+  },
+  {
+    "slug": "luxuri",
+    "name": "luxuri",
+    "title": { "es": "Luxuri", "en": "Luxuri" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "380.000/480.000(vip)", "en": "380.000/480.000(vip)" },
+    "images": [
+      "img/toures/luxuri/1.webp",
+      "img/toures/luxuri/2.webp",
+      "img/toures/luxuri/3.webp",
+      "img/toures/luxuri/4.webp"
+    ]
+  },
+  {
+    "slug": "paue",
+    "name": "Paue",
+    "title": { "es": "Paue", "en": "Paue" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "440.000", "en": "440.000" },
+    "images": [
+      "img/toures/Paue/1.webp",
+      "img/toures/Paue/2.webp",
+      "img/toures/Paue/3.webp",
+      "img/toures/Paue/4.webp"
+    ]
+  },
+  {
+    "slug": "top-3-islas-vip",
+    "name": "Top 3 islas vip",
+    "title": { "es": "Top 3 Islas VIP", "en": "Top 3 Islands VIP" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "370.000", "en": "370.000" },
+    "images": [
+      "img/toures/Top 3 islas vip/1.webp",
+      "img/toures/Top 3 islas vip/2.webp",
+      "img/toures/Top 3 islas vip/3.webp",
+      "img/toures/Top 3 islas vip/4.webp"
+    ]
+  },
+  {
+    "slug": "tour-4-islas-vip",
+    "name": "Tour 4 islas vip",
+    "title": { "es": "Tour 4 Islas VIP", "en": "4 Islands VIP Tour" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "250.000", "en": "250.000" },
+    "images": [
+      "img/toures/Tour 4 islas vip/1.webp",
+      "img/toures/Tour 4 islas vip/2.webp",
+      "img/toures/Tour 4 islas vip/3.webp"
+    ]
+  },
+  {
+    "slug": "tour-bahia",
+    "name": "Tour bahia",
+    "title": { "es": "Tour Bahía", "en": "Bay Tour" },
+    "desc": { "es": "Próximamente.", "en": "Coming soon." },
+  "price": { "es": "80.000", "en": "80.000" },
+    "images": [
+      "img/toures/Tour bahia/1.webp",
+      "img/toures/Tour bahia/2.webp",
+      "img/toures/Tour bahia/3.webp"
     ]
   }
 ]

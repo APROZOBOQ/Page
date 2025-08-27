@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Actualiza la baseUrl con tu dominio o URL de GitHub Pages -->
+  <!-- baseUrl ejemplos:
+       https://tuusuario.github.io/
+       https://tuusuario.github.io/tu-repo/
+       https://tudominio.com/ -->
+  <!-- Página principal -->
+  <url>
+    <loc>https://TU-URL-PUBLICA/</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Secciones internas -->
+  <url>
+    <loc>https://TU-URL-PUBLICA/#nosotros</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://TU-URL-PUBLICA/#tours</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://TU-URL-PUBLICA/#servicios</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://TU-URL-PUBLICA/#contacto</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

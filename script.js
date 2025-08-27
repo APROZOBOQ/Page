@@ -128,6 +128,7 @@ function renderTourCard(tour){
   const lang = getLang();
   const title = tour.title?.[lang] || tour.name || 'Tour';
   const desc = tour.desc?.[lang] || '';
+  const price = tour.price?.[lang] || (lang==='en' ? 'TBD' : 'Por definir');
   const first = tour.images?.[0] || 'img/icon/LOGO.png';
   const slides = (tour.images || []).map((src, idx) => `<img src="${src}" alt="${title} ${idx+1}">`).join('');
   const dots = (tour.images || []).map((_, idx) => `<span class="dot ${idx===0?'active':''}" data-index="${idx}"></span>`).join('');
@@ -137,6 +138,7 @@ function renderTourCard(tour){
   return `
   <article class="card" tabindex="0" aria-label="${title}">
     <div class="card-media" style="--bg:url('${first}')">
+  <div class="price-badge">${price}</div>
       <div class="card-carousel">
         <div class="slides"><div class="track">${slides}</div></div>
         <div class="dots">${dots}</div>
@@ -215,11 +217,31 @@ function hydrateCarousels(root){
 function renderToursGrid(){
   const grid = document.getElementById('toursGrid');
   if(!grid || !Array.isArray(toursCache)) return;
-  const shown = 12; // mostrar hasta 12 visibles
+  // calcular cuántas cards caben por fila (grid auto-fit minmax 240px)
+  const gridWidth = grid.clientWidth || 1120;
+  const minCard = 240;
+  const gap = 18;
+  const perRow = Math.max(1, Math.floor((gridWidth + gap) / (minCard + gap)));
+  const rowsVisible = 3;
+  const shown = perRow * rowsVisible;
   const slice = toursCache.slice(0, shown);
   grid.innerHTML = slice.map(renderTourCard).join('');
   hydrateCarousels(grid);
   updateWhatsLinks();
+
+  const btnMore = document.getElementById('loadMoreTours');
+  if(btnMore){
+    btnMore.style.display = toursCache.length > shown ? 'inline-block' : 'none';
+    btnMore.textContent = getLang()==='en' ? 'See more' : 'Ver más';
+    btnMore.onclick = (e)=>{
+      e.preventDefault();
+      grid.innerHTML = toursCache.map(renderTourCard).join('');
+      hydrateCarousels(grid);
+      updateWhatsLinks();
+      btnMore.textContent = getLang()==='en' ? 'See less' : 'Ver menos';
+      btnMore.onclick = (ev)=>{ ev.preventDefault(); renderToursGrid(); };
+    };
+  }
 }
 
 
